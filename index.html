@@ -13,6 +13,8 @@
       href="assets/font-awesome/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <!-- bootstrap glyphicon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Lightbox -->
     <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
     <!-- Text Rotator-->
@@ -75,16 +77,48 @@
           left: 0,
          }
         return (
+       
          <div className="hero">
-            <div className="hero-left">
-               <span>Hello, I'm</span>
-               <h1>AKM Elias</h1>
-               <h4>Software Engineer</h4>
-            </div>
-            <div className="hero-right">
-             <img src="img/hero.png"/>
+          <div className='hero-navbar'>
+            <img src="img/hero.png" alt="logo"/>
+            <div style={{"display": "flex", "align-items": "center"}}>
+              <ol>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Works</a></li>
+              </ol>
+              <a href="#" className="resume-li">Resume</a>
             </div>
           </div>
+          <section id="about" className="hero-container">
+              <div className="hero-left">
+                <div className="hero-title">
+                  <span>Hello, I'm</span>
+                  <h1>AKM Elias</h1>
+                  <h4>Software Engineer</h4>
+                </div>
+              
+                <ul className="hero-info">
+                  <li>
+                   <span class="glyphicon glyphicon-envelope"></span>
+                    <a>akmelias11@gmail.com</a>
+                  </li>
+                  <li>
+                    <i className="glyphicon glyphicon-phone"/>
+                    <a>+8801746065555</a>
+                  </li>
+                  <li>
+                    <i className="glyphicon glyphicon-map-marker"/>
+                    <a>Sylhet, Bangladesh</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="hero-right">
+              <img src="img/hero.png" alt="hero-image"/>
+              </div>
+            </section>
+          </div>
+   
          )
       }
 
