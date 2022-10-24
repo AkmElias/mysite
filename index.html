@@ -14,13 +14,13 @@
       rel="stylesheet"
     />
     <!-- bootstrap glyphicon -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <!-- Lightbox -->
-    <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
+    <!-- <link href="assets/lightbox/css/lightbox.css" rel="stylesheet" /> -->
     <!-- Text Rotator-->
-    <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" />
-    <!-- FlexSlider -->
-    <link href="assets/flexslider/flexslider.css" rel="stylesheet" />
+    <!-- <link href="assets/textrotator/simpletextrotator.css" rel="stylesheet" /> -->
+    <!-- FlexSlide -->
+    <!-- <link href="assets/flexslider/flexslider.css" rel="stylesheet" /> -->
     <!-- Theme Style -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- Animations -->
@@ -60,37 +60,21 @@
     <!-- root class -->
     <script type="text/babel">
 
-      function Home(){
-        const [appName, setAppName] = React.useState("Home");
-        const homeStyles = {
-          backgroundImage: 'url("img/alternative-background.png")',
-          // background: '#1c1c1c',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          width: '100vw',
-          height: '100vh',
-          padding: '20px',
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-         }
+      function Hero() {
         return (
-       
-         <div className="hero">
+           <div className="hero">
           <div className='hero-navbar'>
-            <img src="img/hero.png" alt="logo"/>
+            <img src="img/AE-logos_white.png" alt="logo"/>
             <div style={{"display": "flex", "align-items": "center"}}>
               <ol>
                 <li><a href="#about">About</a></li>
                 <li><a href="#">Experience</a></li>
                 <li><a href="#">Works</a></li>
               </ol>
-              <a href="#" className="resume-li">Resume</a>
+              <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
             </div>
           </div>
-          <section id="about" className="hero-container">
+          <section id="home" className="hero-container">
               <div className="hero-left">
                 <div className="hero-title">
                   <span>Hello, I'm</span>
@@ -111,6 +95,10 @@
                     <i className="glyphicon glyphicon-map-marker"/>
                     <a>Sylhet, Bangladesh</a>
                   </li>
+                  <li>
+                     <i className="glyphicon glyphicon-file"/>
+                     <a href="Resume-AKM_Elias.pdf" className="resume-a" target="blank">Resume</a>
+                  </li>
                 </ul>
               </div>
               <div className="hero-right">
@@ -118,7 +106,31 @@
               </div>
             </section>
           </div>
-   
+        )
+      }
+      function Home(){
+        const [appName, setAppName] = React.useState("Home");
+        const homeStyles = {
+          backgroundImage: 'url("img/alternative-background.png")',
+          // background: '#1c1c1c',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          width: '100vw',
+          height: '100vh',
+          padding: '20px',
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+         }
+        return (
+           <div>
+            <Hero />
+            <section className="about" id="about">
+              <p>I am about</p>
+            </section>
+           </div>
          )
       }
 
