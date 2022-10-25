@@ -62,26 +62,25 @@
 
       function Hero() {
         return (
-           <div className="hero">
-          <div className='hero-navbar'>
-            <img src="img/AE-logos_white.png" alt="logo"/>
-            <div style={{"display": "flex", "align-items": "center"}}>
-              <ol>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Works</a></li>
-              </ol>
-              <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
+          <div className="hero">
+            <div className='hero-navbar'>
+              <img src="img/AE-logos_white.png" alt="logo"/>
+              <div style={{"display": "flex", "align-items": "center"}}>
+                <ol>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#">Experience</a></li>
+                  <li><a href="#">Works</a></li>
+                </ol>
+                <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
+              </div>
             </div>
-          </div>
-          <section id="home" className="hero-container">
+            <section id="home" className="hero-container">
               <div className="hero-left">
                 <div className="hero-title">
                   <span>Hello, I'm</span>
                   <h1>AKM Elias</h1>
                   <h4>Software Engineer</h4>
                 </div>
-              
                 <ul className="hero-info">
                   <li>
                    <span class="glyphicon glyphicon-envelope"></span>
@@ -102,7 +101,7 @@
                 </ul>
               </div>
               <div className="hero-right">
-              <img src="img/hero.png" alt="hero-image"/>
+                <img src="img/hero.png" alt="hero-image"/>
               </div>
             </section>
           </div>
@@ -110,20 +109,7 @@
       }
       function Home(){
         const [appName, setAppName] = React.useState("Home");
-        const homeStyles = {
-          backgroundImage: 'url("img/alternative-background.png")',
-          // background: '#1c1c1c',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          width: '100vw',
-          height: '100vh',
-          padding: '20px',
-          position: 'absolute',
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 0,
-         }
+       
         return (
            <div>
             <Hero />
