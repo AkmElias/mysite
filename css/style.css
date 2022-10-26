@@ -63,7 +63,7 @@
     border: 1px solid #307A6B;
     border-radius: 2px;
     margin: 0 10px;
-    padding: 2px 8px;
+    padding: 1px 8px;
     text-decoration: none !important;
     font-size: 13px;
  }
@@ -86,9 +86,9 @@
   min-height: 92vh;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 40px;
 }
 
@@ -139,7 +139,7 @@
 .hero-title h1{
   position: relative;
   color: #ffffff;  
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .hero-title h4{
@@ -174,7 +174,7 @@
     border: 1px solid #307A6B;
     border-radius: 2px;
     margin: 2px 0 0 0px;
-    padding: 2px 4px;
+    padding: 2px 6px;
     text-decoration: none !important;
  }
 
@@ -222,11 +222,18 @@
   opacity: 0.8;
 }
 
-
-@media screen and (max-width: 768px){
-  .hero-container{gap: 0}
-  .hero-left h1{font-size: 2.5em;}
+@media screen and (max-width: 1200px){
+  .hero-left h1{font-size: 3em;}
   .hero-left h4{font-size: 1.8em;}
+}
+
+@media screen and (max-width: 1000px){
+  .hero-left h1{font-size: 2.2em;}
+  .hero-left h4{font-size: 1.6em;}
+}
+
+@media screen and (max-width: 900px){
+  .hero-container{flex-direction: column-reverse}
 }
 /* hero section ends */
 
