@@ -61,11 +61,19 @@
     <script type="text/babel">
 
       function Hero() {
+
+        const [hi,setHi] = React.useState('HI, I,am');
+        const [name, setName] = React.useState('AKM ELIAS');
+        const [profession, setProfession] = React.useState('Software Engineer');
+        const [email, setEmail] = React.useState('akmelias11@gmail.com');
+        const [heroInfos, setHeroInfos] = React.useState([{'icon': 'glyphicon-envelope', 'title': 'akmelias11@gmail.com'},{'icon': 'glyphicon-phone', 'title': '+8801746065555'}, {'icon': 'glyphicon-map-marker', 'title': 'Dhaka, Bangladesh'}]);
+        const [socials, setSocials] = React.useState(
+              [{'icon': 'fa-linkedin', 'href': 'https://www.linkedin.com/in/akm-elias/'},{'icon': 'fa-github', 'href': 'https://github.com/AkmElias'}, {'icon': 'fa-facebook', 'href': 'https://www.facebook.com/akm.elias/'}, {'icon': 'fa-twitter', 'title': 'https://twitter.com/EliasAkm'}]);
         return (
           <div className="hero">
             <div className='hero-navbar'>
               <img src="img/AE-logos_white.png" alt="logo"/>
-              <div style={{"display": "flex", "align-items": "center"}}>
+              <div style={{"display": "flex", "alignItems": "center"}}>
                 <ol>
                   <li><a href="#about">About</a></li>
                   <li><a href="#">Experience</a></li>
@@ -77,27 +85,36 @@
             <section id="home" className="hero-container">
               <div className="hero-left">
                 <div className="hero-title">
-                  <span>Hello, I'm</span>
-                  <h1>AKM Elias</h1>
-                  <h4>Software Engineer</h4>
+                  <span>{hi}</span>
+                  <h1>{name}</h1>
+                  <h4>{profession}</h4>
                 </div>
                 <ul className="hero-info">
-                  <li>
-                   <span class="glyphicon glyphicon-envelope"></span>
-                    <a>akmelias11@gmail.com</a>
-                  </li>
-                  <li>
-                    <i className="glyphicon glyphicon-phone"/>
-                    <a>+8801746065555</a>
-                  </li>
-                  <li>
-                    <i className="glyphicon glyphicon-map-marker"/>
-                    <a>Sylhet, Bangladesh</a>
-                  </li>
+                  {
+                    heroInfos.map((info, index) => {
+                      return (
+                        <li key={index}>
+                          <i className={`glyphicon ${info.icon}`}/>
+                          <a>{info.title}</a>
+                        </li>
+                      )
+                    })
+                  } 
                   <li>
                      <i className="glyphicon glyphicon-file"/>
                      <a href="Resume-AKM_Elias.pdf" className="resume-a" target="blank">Resume</a>
                   </li>
+                </ul>
+                <ul className="hero-socials">
+                  {
+                    socials.map((social, index) => {
+                      return (
+                        <li key={index}>
+                          <a href={social.href} target="_blank"><i className={`fa ${social.icon}`} /></a>  
+                        </li>
+                      )
+                    })
+                  }
                 </ul>
               </div>
               <div className="hero-right">
