@@ -209,6 +209,7 @@
   border: 1px solid #a3a4a3;
   border-radius: 50%;
   border-top-right-radius: 10px;
+  cursor: pointer;
 }
 
 .hero-socials li a{
@@ -268,10 +269,13 @@
   max-width: 48%;
 }
 
+.hello{
+  font-size: large;
+}
 .about-info p{
-  font-size: 14px;
+  font-size: 16px;
   word-break: break-word;
-  word-spacing: 2px;
+  word-spacing: 1px;
 }
 
 .about .skills{
@@ -300,4 +304,29 @@
 
 .textme-button:hover{
   background-color: #06aa90;
+}
+
+/* about css ends here */
+
+/* works css starts here.. */
+
+.works{
+  min-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.works h1{
+  color: #FFFFFF;
+  font-family: monospace;
+  font-weight: 600;
+  color: #00947C;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
 }

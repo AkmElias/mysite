@@ -68,7 +68,7 @@
         const [email, setEmail] = React.useState('akmelias11@gmail.com');
         const [heroInfos, setHeroInfos] = React.useState([{'icon': 'glyphicon-envelope', 'title': 'akmelias11@gmail.com'},{'icon': 'glyphicon-phone', 'title': '+8801746065555'}, {'icon': 'glyphicon-map-marker', 'title': 'Dhaka, Bangladesh'}]);
         const [socials, setSocials] = React.useState(
-              [{'icon': 'fa-linkedin', 'href': 'https://www.linkedin.com/in/akm-elias/'},{'icon': 'fa-github', 'href': 'https://github.com/AkmElias'}, {'icon': 'fa-facebook', 'href': 'https://www.facebook.com/akm.elias/'}, {'icon': 'fa-twitter', 'title': 'https://twitter.com/EliasAkm'}]);
+              [{'icon': 'fa-linkedin', 'href': 'https://www.linkedin.com/in/akm-elias/'},{'icon': 'fa-github', 'href': 'https://github.com/AkmElias'}, {'icon': 'fa-facebook', 'href': 'https://www.facebook.com/akm.elias/'}, {'icon': 'fa-twitter', 'href': 'https://twitter.com/EliasAkm'}]);
         return (
           <div className="hero">
             <div className='hero-navbar'>
@@ -76,8 +76,8 @@
               <div style={{"display": "flex", "alignItems": "center"}}>
                 <ol>
                   <li><a href="#about">About</a></li>
-                  <li><a href="#">Experience</a></li>
-                  <li><a href="#">Works</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#works">Works</a></li>
                 </ol>
                 <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
               </div>
@@ -124,22 +124,20 @@
           </div>
         )
       }
-      function Home(){
-        const [appName, setAppName] = React.useState("Home");
-        const [myBio, setmyBio] = React.useState("I am Elias, a passionate programmer and a full-stack software developer. I love to make cool things. I have enthusiasm for a lot of things but programming and problem-solving gives me the dopamine I need. Here are a few tools I am good at...");
-        const [skills, setSkills] = React.useState(['Javascript', 'NodeJS', 'ReactJs', 'VueJs', 'C++', 'PHP', 'HTML5', 'CSS3', 'git', 'Android'])
-       
+      function About(){
+        const [myBio, setmyBio] = React.useState("I am Elias, a computer science graduate, a passionate problem solver and a full-stack software developer. I love to make cool things. I have enthusiasm for a lot of things but programming and problem-solving gives me the dopamine I need. I am alwayse ready for collaboration, every Disruptive ideas are welcomed, Feel free to ping me if you have anything I can help building. Here are a few tools I am good at...");
+        const [skills, setSkills] = React.useState(['Javascript', 'NodeJS', 'ReactJs', 'VueJs', 'C++', 'PHP', 'HTML5', 'CSS3', 'Git', 'Android']);
+
         function openCrisp(){
-          $crisp. push(['do', 'chat:open'])
+          $crisp.push(['do', 'chat:open'])
         }
+
         return (
-           <div>
-            <Hero />
-            <section className="about" id="about">
+          <section className="about" id="about">
               <img src="img/about.png" alt="about" />
               <div className="about-info">
                 <h3>About Me</h3>
-                <span>Hello,</span>
+                <span className="hello">Hello,</span>
                 <p>{myBio}</p>
                 <ul className="skills">
                   {skills.map((skill, index) => {
@@ -148,16 +146,23 @@
                 </ul>
                 <button className='textme-button' onClick={openCrisp}>Text Me</button>
               </div>
-            </section>
-           </div>
-         )
+          </section>
+        )
       }
-
+      function Works(){
+        return (
+          <section id="works" className="works">
+            <h1>Works</h1>
+          </section>
+        )
+      }
       function App(){
         return (
-         
-           <Home />
-    
+          <div>
+            <Hero />
+            <About />
+            <Works />
+          </div>
         )
       }
 
