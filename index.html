@@ -150,13 +150,38 @@
         )
       }
       function Works(){
+        const [data, setData] = React.useState({});
+        const [categories, setCategories]  = React.useState(['all', 'react-vue', 'mobile-app', 'programming', 'javascript']);
+        const [currentCategory, setCurrentCategory] = React.useState('all');
+
+        React.useEffect(() => {
+          fetch('data.json')
+            .then(response => {
+              return response.json();
+            })
+            .then(data => {
+              console.log("data: " + JSON.stringify(data));
+              setData(data);
+            })
+        }, []);
+
         return (
           <section id="works" className="works">
             <h1>Works</h1>
+            <div className="works-container">
+              <ul>
+                {
+                  categories.map((category, index) => {
+                    return <li className={category == currentCategory ? "selected": ""} onClick={() => setCurrentCategory(category)}>{category}</li>
+                  })
+                }
+              </ul>
+            </div>
           </section>
         )
       }
       function App(){
+        
         return (
           <div>
             <Hero />
