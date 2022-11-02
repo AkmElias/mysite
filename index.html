@@ -151,7 +151,8 @@
       }
       function Works(){
         const [data, setData] = React.useState({});
-        const [categories, setCategories]  = React.useState(['all', 'react-vue', 'mobile-app', 'programming', 'javascript']);
+        const [categories, setCategories]  = React.useState(['all', 'react-vue', 'programming', 'mobile-app']);
+        const [projects, setProjects] = React.useState([]);
         const [currentCategory, setCurrentCategory] = React.useState('all');
 
         React.useEffect(() => {
@@ -162,6 +163,7 @@
             .then(data => {
               console.log("data: " + JSON.stringify(data));
               setData(data);
+              setProjects(data.projects);
             })
         }, []);
 
@@ -176,6 +178,20 @@
                   })
                 }
               </ul>
+              <div className="works-cards">
+                <div className="works-card">
+                  <img src="img/tic-tac-toe.png" alt="tic-tac-toe-img"/>
+                </div>
+                <div className="works-card">
+                  <img src="img/tic-tac-toe.png" alt="tic-tac-toe-img"/>
+                </div>
+                <div className="works-card">
+                  <img src="img/tic-tac-toe.png" alt="tic-tac-toe-img"/>
+                </div>
+                <div className="works-card">
+                  <div className="">Hi card</div>
+                </div>
+              </div>
             </div>
           </section>
         )

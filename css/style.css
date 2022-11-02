@@ -11,6 +11,9 @@
  background: transparent;
 }
 
+html {
+     scroll-behavior: smooth;
+}
 
 ::-webkit-scrollbar {
     width: 3px;
@@ -345,21 +348,22 @@
 .works-container ul{
   display: flex;
   list-style: none;
-  gap: 4px;
-  text-transform: capitalize;
+  gap: 8px;
+  text-transform: lowercase;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  margin-top: 10px;
   flex-wrap: wrap;
 }
 
 .works-container ul li{
   color: #00947C;
   padding: 2px 4px;
-  font-family: monospace;
   font-weight: 700;
   font-size: 14px;
   border-bottom: 2px solid #efefef;
+  cursor: pointer;
 }
 
 .works-container ul li:hover{
@@ -370,4 +374,31 @@
 .works-container ul li.selected{
   background: #ececec;
   color: #ff7518;
+}
+
+.works-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.works-card{
+  width: 320px;
+  height: 210px;
+  background: #dde3e2;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.works-card img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 8px;
+    transition: 200ms ease-in-out;
+}
+
+.works-card img:hover{
+  transform: scale(1.085);
 }
