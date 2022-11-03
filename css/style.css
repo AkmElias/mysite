@@ -337,12 +337,19 @@ html {
   text-transform: capitalize;
 }
 
+.learning{
+  opacity: 0.4;
+  color: #ff7518;
+  margin-right: 10px;
+}
+
 .works-container{
   background: #efefef;
   border-radius: 8px;
   padding: 12px;
   width: 100%;
-  min-height: 450px;
+  min-height: 625px;
+  transition: 200ms ease-in;
 }
 
 .works-container ul{
@@ -352,7 +359,7 @@ html {
   text-transform: lowercase;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 10px;
   flex-wrap: wrap;
 }
@@ -364,6 +371,7 @@ html {
   font-size: 14px;
   border-bottom: 2px solid #efefef;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .works-container ul li:hover{
@@ -380,25 +388,75 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
 }
 
 .works-card{
   width: 320px;
-  height: 210px;
-  background: #dde3e2;
-  border-radius: 10px;
-  padding: 8px;
+  height: fit-content;
+  border-radius: 6px;
+  box-shadow: 3px 5px 10px 5px #ddd;
+  background: #e8e8e8;
 }
 
 .works-card img{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 8px;
-    transition: 200ms ease-in-out;
+  width: 100%;
+  object-fit: cover;
+  height: 120px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  /* border-bottom: 1px solid #f6f8f7; */
 }
 
 .works-card img:hover{
-  transform: scale(1.085);
+  /* transform: scale(1.02); */
+}
+
+.card-content{
+  height: calc(100% - 140px);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-content-info{
+  margin-top: 8px;;
+}
+
+.card-content h5{
+  font-family: 'Circular-Loom sans-serif';
+}
+
+.card-content p{
+  /* text-align: center; */
+  color: rgb(115 113 111);
+  font-family: "FontAwesome sans-serif";
+  font-size: 15px;
+}
+
+.card-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-links a{
+  border: none;
+  border-width: 0;
+  background: #6c7373;
+  border-radius: 3px;
+  padding: 4px 14px;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.card-links a:hover{
+  background: #889090;
 }

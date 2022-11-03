@@ -1,42 +1,74 @@
 {
     "projects": [
         {
-            "title" : "Unbeatable Tic Tac Toe",
-            "category" : "react&vue",
-            "img": "img/blog2.jpg",
-            "live_link": "",
-            "github_url" : ""
-        },
-        {
             "title" : "Snake game",
-            "category" : "react&vue",
-            "img": "img/blog3.jpg",
-            "live_link": "",
-            "github_url" : ""
+            "description" : "A simple snake game with react made for learning react in depth. ~React",
+            "category" : "react-vue",
+            "img": "img/snake-game-react.png",
+            "links": [
+                {"title": "github", "url": "https://github.com/AkmElias/snake_with_react"},
+                {"title": "live", "url": "https://react-snake-gmae.netlify.app/"}
+            ]
         },
         {
-            "title" : "",
-            "category" : "",
-            "img": "",
-            "live_link": "",
-            "github_url" : ""
+            "title" : "Unbeatable Tic Tac Toe",
+            "description": "A simple but unbeatable 'human vs bot' tic-tac-toe game designed with priority based bot defence. ~Vue",
+            "category" : "react-vue",
+            "img": "img/tic-tac-toe.png",
+            "links": [
+                {"title": "github", "url": "https://github.com/AkmElias/tic-tac-toe"},{"title": "live", "url": "https://tic-tac-toe-vuejs.netlify.app/"}
+            ]
         },
         {
-            "title" : "",
-            "category" : "",
-            "img": "",
-            "live_link": "",
-            "github_url" : ""
+            "title" : "covid-19-tracker",
+            "description": "An web app for tracking the global covid-19 statistics. ~React",
+            "category" : "react-vue",
+            "img": "img/covid-19-tracker.png",
+            "links": [
+                {"title": "github", "url": "https://github.com/AkmElias/covid-19-tracker"},
+                {"title": "live", "url": "https://covid-19-tracker-b4f4e.web.app/"}
+            ]
         },
         {
-            "title" : "",
-            "category" : "",
-            "img": "",
-            "live_link": "",
-            "github_url" : ""
+            "title" : "WordBook",
+            "description": "An android application for Bangali to English Vocabulary translation. ~Android",
+            "category" : "mobile-app",
+            "img": "img/dictionary-app.png",
+            "links": [
+                {"title": "github", "url": "https://github.com/AkmElias/WordBook"},
+                {"title": "live", "url": "https://play.google.com/store/apps/details?id=com.elias.wordbook"}
+            ]
+        },
+        {
+            "title" : "Toss Order & Team",
+            "description": "A simple fun android application to make toss , order and make random teams. ~Android",
+            "category" : "mobile-app",
+            "img": "img/toss-team-order.png",
+            "links": [
+                {"title": "github", "url": "https://github.com/AkmElias/Toss_Order_eam"},
+                {"title": "live", "url": "https://play.google.com/store/apps/details?id=com.hellologic.toss_order_team"}
+            ]
+        },
+        {
+            "title" : "LeetCode",
+            "description": "Problem solving and programming continues... ~C++",
+            "category" : "programming",
+            "img": "img/leetcode-profile.png",
+            "links": [
+                {"title": "profile", "url": "https://leetcode.com/akmelias11/"}
+            ]
+        },
+        {
+            "title" : "UVA Online judge",
+            "description": "University days problem solvings ... ~C++",
+            "category" : "programming",
+            "img": "img/uva-profile.png",
+            "links": [
+                {"title": "profile", "url": "https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=15"}
+            ]
         }
     ],
-    "other_information": [
+    "other_informations": [
     ],
-    "end": {}
+    "end": "end here"
 }
