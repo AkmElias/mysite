@@ -4,7 +4,7 @@
             "title" : "Snake game",
             "description" : "A simple snake game with react made for learning react in depth. ~React",
             "category" : "react-vue",
-            "img": "img/snake-game-react.png",
+            "img": "img/snake-game-with-react.png",
             "links": [
                 {"title": "github", "url": "https://github.com/AkmElias/snake_with_react"},
                 {"title": "live", "url": "https://react-snake-gmae.netlify.app/"}

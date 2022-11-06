@@ -392,11 +392,12 @@ html {
 }
 
 .works-card{
-  width: 320px;
+  width: 342px;
   height: fit-content;
   border-radius: 6px;
   box-shadow: 3px 5px 10px 5px #ddd;
   background: #e8e8e8;
+  overflow: hidden;
 }
 
 .works-card img{
@@ -405,11 +406,12 @@ html {
   height: 120px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  transition: 200ms ease-in-out;
   /* border-bottom: 1px solid #f6f8f7; */
 }
 
 .works-card img:hover{
-  /* transform: scale(1.02); */
+  transform: scale(1.2);
 }
 
 .card-content{
@@ -445,18 +447,16 @@ html {
 }
 
 .card-links a{
-  border: none;
-  border-width: 0;
-  background: #6c7373;
-  border-radius: 3px;
-  padding: 4px 14px;
+  margin-right: 8px;
   cursor: pointer;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 10px;
+  text-transform: CAPITALIZE;
+  font-size: 14px;
+  color: #00974c;
+  font-weight: 500;
   text-decoration: none;
 }
 
 .card-links a:hover{
-  background: #889090;
+  opacity: 0.75;
 }
