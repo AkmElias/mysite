@@ -51,7 +51,7 @@
         },
         {
             "title" : "LeetCode",
-            "description": "Problem solving and programming continues... ~C++",
+            "description": "Problem solving and programming continues. Practice and attend weekly contests. ~C++",
             "category" : "programming",
             "img": "img/leetcode-profile.png",
             "links": [
@@ -60,7 +60,7 @@
         },
         {
             "title" : "UVA Online judge",
-            "description": "University days problem solvings ... ~C++",
+            "description": "University days problem solvings. Increases capcity of solving complex problems. ~C++",
             "category" : "programming",
             "img": "img/uva-profile.png",
             "links": [
@@ -68,7 +68,32 @@
             ]
         }
     ],
-    "other_informations": [
+    "experiences": [
+        {
+            "title": "Bachelor of Science in Computer Science and Engineering",
+            "period": "2014 - 2019",
+            "company": "Metropolitan University, sylhet"
+        },
+        {
+            "title": "Junior Software Engineer",
+            "period": "September 2019 - March 2020",
+            "company": "Connecting community LTD, Sylhet"
+        },
+        {
+            "title": "Career Gap, Personal reasons",
+            "period":"Upto December 2020",
+            "company": "Home"
+        },
+        {
+            "title": "Software Engineer",
+            "period": "December 2020 - November 2021",
+            "company": "Bengal Infotech, Sylhet"
+        },
+        {
+            "title": "Software Engineer",
+            "period": "Decmber 2021 - Continues",
+            "company": "Authlab, Sylhet"
+        }
     ],
     "end": "end here"
 }

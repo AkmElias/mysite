@@ -320,7 +320,7 @@ html {
   min-height: 500px;
   width: 100%;
   margin: 0 auto;
-  padding: 2% 7.5%;
+  padding: 2% 3.5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -344,7 +344,7 @@ html {
 }
 
 .works-container{
-  background: #efefef;
+  /* background: #efefef; */
   border-radius: 8px;
   padding: 12px;
   width: 100%;
@@ -359,7 +359,7 @@ html {
   text-transform: lowercase;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 10px;
   flex-wrap: wrap;
 }
@@ -375,12 +375,14 @@ html {
 }
 
 .works-container ul li:hover{
-  background: #ececec;
+  /* background: #ececec; */
+  border-bottom: 2px solid #00947C;
   color: #ff7518;
 }
 
 .works-container ul li.selected{
-  background: #ececec;
+  /* background: #ececec; */
+  border-bottom: 2px solid #00947C;
   color: #ff7518;
 }
 
