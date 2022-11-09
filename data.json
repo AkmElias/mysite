@@ -7,12 +7,12 @@
             "img": "img/snake-game-with-react.png",
             "links": [
                 {"title": "github", "url": "https://github.com/AkmElias/snake_with_react"},
-                {"title": "live", "url": "https://react-snake-gmae.netlify.app/"}
+                {"title": "live", "url": "https://snake.akmelias.com"}
             ]
         },
         {
             "title" : "Unbeatable Tic Tac Toe",
-            "description": "A simple but unbeatable 'human vs bot' tic-tac-toe game designed with priority based bot defence. ~Vue",
+            "description": "I contributed to make the bot unbetable to one of my senior's project. ~Vue",
             "category" : "react-vue",
             "img": "img/tic-tac-toe.png",
             "links": [
