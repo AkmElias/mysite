@@ -3,7 +3,7 @@
         {
             "title" : "Snake game",
             "description" : "A simple snake game with react made for learning react in depth. ~React",
-            "category" : "react-vue",
+            "category" : "web",
             "img": "img/snake-game-with-react.png",
             "links": [
                 {"title": "github", "url": "https://github.com/AkmElias/snake_with_react"},
@@ -13,7 +13,7 @@
         {
             "title" : "Unbeatable Tic Tac Toe",
             "description": "I contributed to make the bot unbetable to one of my senior's project. ~Vue",
-            "category" : "react-vue",
+            "category" : "web",
             "img": "img/tic-tac-toe.png",
             "links": [
                 {"title": "github", "url": "https://github.com/AkmElias/tic-tac-toe"},{"title": "live", "url": "https://tic-tac-toe-vuejs.netlify.app/"}
@@ -22,7 +22,7 @@
         {
             "title" : "covid-19-tracker",
             "description": "An web app for tracking the global covid-19 statistics. ~React",
-            "category" : "react-vue",
+            "category" : "web",
             "img": "img/covid-19-tracker.png",
             "links": [
                 {"title": "github", "url": "https://github.com/AkmElias/covid-19-tracker"},
@@ -65,6 +65,33 @@
             "img": "img/uva-profile.png",
             "links": [
                 {"title": "profile", "url": "https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=15"}
+            ]
+        },
+        {
+            "title": "Data structure and Algorithms - certificate",
+            "description": "A freecodeamp course, covering from the basics of Javascript to advance data tructure and algorithms.",
+            "category": "programming",
+            "img": "img/freecodecamp-javascript-algorithm-datastructures.png",
+            "links": [
+                {"title": "veiw", "url": "https://www.freecodecamp.org/certification/akmelias/javascript-algorithms-and-data-structures"}
+            ]
+        },
+        {
+            "title": "Frontend libraries - certificate",
+            "description": "A freecodeamp course (300 hours), covering all primary frontend libraries.",
+            "category": "web",
+            "img": "img/freecodecamp-frontend-libraries.png",
+            "links": [
+                {"title": "veiw", "url": "https://www.freecodecamp.org/certification/akmelias/front-end-development-libraries"}
+            ]
+        },
+        {
+            "title": "Responsive web design - certificate",
+            "description": "A freecodeamp course (300 hours), covering all the aspects of responsive web design",
+            "category": "web",
+            "img": "img/freecodecamp-responsive-web-design.png",
+            "links": [
+                {"title": "veiw", "url": "https://www.freecodecamp.org/certification/akmelias/responsive-web-design"}
             ]
         }
     ],

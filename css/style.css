@@ -435,7 +435,7 @@ html {
 }
 
 .works-card{
-  width: 342px;
+  width: 348px;
   height: fit-content;
   border-radius: 6px;
   box-shadow: 3px 5px 10px 5px #ddd;
@@ -469,6 +469,10 @@ html {
 
 .card-content-info{
   margin-top: 8px;;
+}
+
+.card-content-info h4{
+  font-size: 16px;
 }
 
 .card-content h5{
