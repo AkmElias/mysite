@@ -53,7 +53,7 @@
             "title" : "LeetCode",
             "description": "Problem solving and programming continues. Practice and attend weekly contests. ~C++",
             "category" : "programming",
-            "img": "img/leetcode-profile.png",
+            "img": "img/leet_code.png",
             "links": [
                 {"title": "profile", "url": "https://leetcode.com/akmelias11/"}
             ]
