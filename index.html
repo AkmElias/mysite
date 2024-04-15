@@ -72,6 +72,7 @@
                 <ol>    
                   <li><a href="#about">About</a></li>
                   <li><a href="#works">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ol>
                 <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
               </div>
@@ -184,7 +185,7 @@
               <ul>
                 {
                   categories.map((category, index) => {
-                    return <li className={category == currentCategory ? "selected": ""} onClick={(e) => filterByCategory(e,category)}>{category}</li>
+                    return <li className={category == currentCategory ? "selected": ""} key={index} onClick={(e) => filterByCategory(e,category)}>{category}</li>
                   })
                 }
               </ul>
@@ -203,7 +204,7 @@
                           {
                             project.links.map((link, i) => {
                               return (
-                                <a href={link.url} target="_blank" className="button">{link.title}</a>
+                                <a href={link.url} target="_blank" className="button" >{link.title}</a>
                               )
                             })
                           }
@@ -218,6 +219,42 @@
           </section>
         )
       }
+
+      function Contact(){
+        const [name, setName] = React.useState('');
+        const [email, setEmail] = React.useState('');
+        const [message, setMessage] = React.useState('');
+
+        function handleSubmit(e){
+          e.preventDefault();
+          const mailtoLink = `mailto:eliascse33@gmail.com?subject=Support Request from ${name}&body=${message}`;
+          // Open default email client with pre-filled details
+          window.location.href = mailtoLink;
+          resetForm();
+          console.log('name: ', name, 'email: ', email, 'message: ', message);
+        }
+
+        function resetForm(){
+          setName('');
+          setEmail('');
+          setMessage('');
+        }
+
+        return (
+          <section className="contact" id="contact">
+            <h3>Contact Me</h3>
+            <form onSubmit={handleSubmit}>
+              <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required />
+              <input type="email" placeholder="Your Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <textarea placeholder="Your Question" value={message} onChange={(e) => setMessage(e.target.value)} required />
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        );
+     
+      }
+    
+
       function App(){
         
         return (
@@ -225,6 +262,7 @@
             <Hero />
             <About />
             <Works />
+            <Contact />
           </div>
         )
       }
