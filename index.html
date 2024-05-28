@@ -65,18 +65,7 @@
         const [socials, setSocials] = React.useState(
               [{'icon': 'fa-linkedin', 'href': 'https://www.linkedin.com/in/akm-elias/'},{'icon': 'fa-github', 'href': 'https://github.com/AkmElias'}, {'icon': 'fa-facebook', 'href': 'https://www.facebook.com/akm.elias/'}, {'icon': 'fa-twitter', 'href': 'https://twitter.com/EliasAkm'}]);
         return (
-          <div className="hero">
-            <div className='hero-navbar'>
-              <img src="img/AE-logos_white.png" alt="logo"/>
-              <div style={{"display": "flex", "alignItems": "center"}}>
-                <ol>    
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#works">Works</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ol>
-                <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
-              </div>
-            </div>
+          <div className="hero" id="hero">
             <section id="home" className="hero-container">
               <div className="hero-left">
                 <div className="hero-title">
@@ -259,6 +248,17 @@
         
         return (
           <div>
+            <div className='navbar'>
+              <a href="#hero"><img src="img/AE-logos_white.png" alt="logo"/></a>
+              <div style={{"display": "flex", "alignItems": "baseline"}}>
+                <ol>    
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#works">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ol>
+                <a href="https://wpminers.com/author/akm-elias/" className="blogs-li" target="blank">Blog</a>
+              </div>
+            </div>
             <Hero />
             <About />
             <Works />
